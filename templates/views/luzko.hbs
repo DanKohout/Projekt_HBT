@@ -65,11 +65,11 @@
                                 viewBox="0 0 170 64">
                                 <path fill="#fff" d="M0 24h170v27H0z" />
                                 <path fill="#fff" d="M0 48h9v16H0zm157-1h13v17h-13zm-37-34h50v11h-50z" />
-                                <ellipse cx="134.5" cy="9.5" fill="red" rx="11.5" ry="9.5" />
-                                <path fill="red" d="M75 6h45v18H75zM13 9h59v15H13z" />
+                                <ellipse id="icon_human__part1" cx="134.5" cy="9.5" fill="red" rx="11.5" ry="9.5" />
+                                <path id="icon_human__part2" fill="red" d="M75 6h45v18H75zM13 9h59v15H13z" />
                             </svg>
                         </div>
-                        <div>obsazené</div>
+                        <div id="bed-occupied">obsazené</div>
                     </div>
                     <div class="rectangle-type">
                         <div><b>Typ lůžka:</b></div>
@@ -81,6 +81,11 @@
                         <div id="wash-date"></div>
                         <div><b>Počet mycích cyklů:</b></div>
                         <div id="wash-cycles"></div>
+                    </div>
+
+                    <div class="battery-container">
+                        <div class="battery-point"><div></div></div>
+                        <div class="battery-charge" id="battery-charge"></div>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const room_show = document.getElementById("room-show")
     const building_show = document.getElementById("building-show")
     const floor_show = document.getElementById("floor-show")
+    const bed_occupied = document.getElementById('bed-occupied')
 
     const bed_in_room_container = document.getElementById("bed-in-room-container")
 
@@ -13,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const wash_date = document.getElementById("wash-date")
     const wash_cycles = document.getElementById("wash-cycles")
 
+    const icon_human__part1 = document.getElementById("icon_human__part1")
+    const icon_human__part2 = document.getElementById("icon_human__part2")
+
+    const battery_charge = document.getElementById('battery-charge')
 
 
     window.addEventListener("load", (event) => {
@@ -43,9 +48,28 @@ document.addEventListener('DOMContentLoaded', function () {
         building_show.innerHTML = `${bed.building}`
         floor_show.innerHTML = `${bed.floor}`
 
+        if (!bed.occupied) {
+            icon_human__part1.classList.add('disp_none')
+            icon_human__part2.classList.add('disp_none')
+            bed_occupied.innerHTML = "volné"
+        }
+
         bed_type.innerHTML = `${bed.bed_type}`
         wash_date.innerHTML = `${bed.date_last_wash}`
         wash_cycles.innerHTML = `${bed.number_of_wash_cycles}`
+
+
+        const batt_div = document.createElement('div')
+        batt_div.style.height = bed.battery + '%';
+        if (bed.battery > 75) {
+            batt_div.style.backgroundColor = 'greenyellow'
+        } else if (bed.battery > 30) {
+            batt_div.style.backgroundColor = 'yellow'
+        } else {
+            batt_div.style.backgroundColor = 'red'
+        }
+        battery_charge.appendChild(batt_div)
+
     }
 
     function displayBedsInRoom(beds) {
@@ -54,10 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
         beds.forEach(bed => {
             const bedDiv = document.createElement('div')
             bedDiv.textContent = `${bed.id_bed}`
-            
-            if(bed.occupied){
+
+            if (bed.occupied) {
                 bedDiv.classList.add('bed-red')
-            }else{
+            } else {
                 bedDiv.classList.add('bed-green')
             }
 

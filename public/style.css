@@ -14,6 +14,12 @@ body {
 
 }
 
+
+/*--customs--*/
+.disp_none{
+    display: none;
+}
+
 /*----HEADER-START---------*/
 header {
 
@@ -164,7 +170,7 @@ header {
 
 .main-content-rec {
     background-color: var(--main-color);
-    height: 80%;
+    min-height: 80%;
     width: 100%;
     border-radius: 2em;
     padding: 2em;
@@ -475,6 +481,47 @@ table tr td button:hover {
     font-weight: bold;
     color: var(--text-color-main);
 }
+
+.battery-container{
+    grid-column: 5;
+    grid-row: 5 /span 3;
+    position: relative;
+    min-width: 6em;
+    max-width: 7em;
+}
+.battery-point{
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    top: -0.7em;
+    
+    
+}
+.battery-point div{
+    background-color: var(--main-color);
+    border: solid 5px var(--accent-color2);
+    border-radius: 0.2em;
+    width: 50%;
+    height: 100%;
+    margin:auto;
+}
+.battery-charge{
+    background-color: var(--main-color);
+    border: solid 5px var(--accent-color2);
+    border-radius: 1em;
+    height: 100%;
+    padding: 0.3em 0.5em;
+    position: relative;
+}
+.battery-charge div{
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    /*background-color: greenyellow;*/
+    
+}
+
+
 
 .go-left{
     transform: translateX(0);
