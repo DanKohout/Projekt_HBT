@@ -7,4 +7,7 @@ Zde můžete vidět 2 nejzásadnější okna(stránky) aplikace.
 ## Konkrétní lůžko
 ![image](https://github.com/DanKohout/Projekt_HBT/assets/100781092/f3f1440d-9806-4a7e-b50b-a74b0dfd5607)
 
+## Zmenšení
+![image](https://github.com/DanKohout/Projekt_HBT/assets/100781092/f12e6459-e022-42bc-a5ca-1366a2793936)
+
 
