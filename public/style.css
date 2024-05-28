@@ -543,6 +543,9 @@ table tr td button:hover {
     header{
         padding-left: 0;
     }
+    .main-content{
+        padding: 1em;
+    }
     
     
 
