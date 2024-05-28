@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Welcome page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="content">
+        <div class="side-bar go-left" id="sidebar">
+            <a href="/">
+                <div class="sidebar-item sidebar-item-selected">Lůžka</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Správa lůžek</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Kontrola senzorů</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Správa uživatelů</div>
+            </a>
+
+        </div>
+        <div class="main-content">
+            <div>
+                <h4><b>Seznam lůžek > Lůžko ></b></h4>
+            </div>
+            <div class="filler"></div>
+
+            <div class="main-content-rec">
+                <div class="grid-layout">
+                    <div class="id-show" id="id-show">
+                        ID: L00085
+                    </div>
+
+                    <div class="rectangle-position">
+                        <div>
+                            <div class="label-1-bold">Oddělení:</div>
+                            <div id="department-show">Rehabilitace</div>
+                            <div class="label-1-bold">Pokoj:</div>
+                            <div id="room-show">R5050</div>
+                            <div class="label-1-bold">Budova:</div>
+                            <div id="building-show">R3</div>
+                            <div class="label-1-bold">Poschodí:</div>
+                            <div id="floor-show">2</div>
+                        </div>
+                        <div class="rectangle-position-inner" id="bed-in-room-container">
+
+                        </div>
+
+                    </div>
+                    <div class="rectangle-occupied">
+                        <div>Obsazenost:</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="45" fill="none"
+                                viewBox="0 0 170 64">
+                                <path fill="#fff" d="M0 24h170v27H0z" />
+                                <path fill="#fff" d="M0 48h9v16H0zm157-1h13v17h-13zm-37-34h50v11h-50z" />
+                                <ellipse cx="134.5" cy="9.5" fill="red" rx="11.5" ry="9.5" />
+                                <path fill="red" d="M75 6h45v18H75zM13 9h59v15H13z" />
+                            </svg>
+                        </div>
+                        <div>obsazené</div>
+                    </div>
+                    <div class="rectangle-type">
+                        <div><b>Typ lůžka:</b></div>
+                        <div id="bed-type"></div>
+                        <div>obrázek/ikona typu</div>
+                    </div>
+                    <div class="rectangle-wash">
+                        <div><b>Poslední mytí:</b></div>
+                        <div id="wash-date"></div>
+                        <div><b>Počet mycích cyklů:</b></div>
+                        <div id="wash-cycles"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="general.js"></script>
+    <script src="luzko.js"></script>
+</body>
+
+</html>

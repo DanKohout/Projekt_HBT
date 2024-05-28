@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Welcome page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="content">
+        <div class="side-bar go-left" id="sidebar">
+            <a href="/">
+                <div class="sidebar-item sidebar-item-selected">Lůžka</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Správa lůžek</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Kontrola senzorů</div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item">Správa uživatelů</div>
+            </a>
+
+        </div>
+        <div class="main-content">
+            <div>
+                <h4><b>Seznam lůžek ></b></h4>
+            </div>
+            <div class="search-and-sort">
+                <div class="search-container">
+                    <input type="text" name="search" placeholder="Search for..." class="search-input"
+                        id="search-bar-beds">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="sort-container">
+                    <div class="sort-label">Setřídit podle:</div>
+                    <div class="sort-container-inner">
+                        <select>
+                            <option value="mistnost">místnost</option>
+                            <option value="blab">blab</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="table-labels">
+                    <div>ID lůžka</div>
+                    <div>Označení místnosti</div>
+                    <div class="remove-from-table-upon-resize">Oddělení</div>
+                    <div></div>
+
+                </div>
+            </div>
+            <div class="main-content-rec">
+
+                <div>
+                    <div class="content-table">
+
+                        <table id="table-beds">
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>L00058</td>
+                                <td>M00123</td>
+                                <td>Rehabilitace</td>
+                                <td class="align-right">
+                                    <button>info</button>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="sub-content2">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="general.js"></script>
+    <script src="luzka_seznam.js"></script>
+</body>
+
+</html>
